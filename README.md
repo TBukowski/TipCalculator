@@ -1,4 +1,4 @@
-A bare bones tip calculator app that with the following guidlines:
+A bare bones tip calculator app with the following guidlines:
 
 You enter the amount of the bill(allow 2 decimal places).
 -select from a dropdown of typical tip percentages(5, 10,15,20,25,30).
