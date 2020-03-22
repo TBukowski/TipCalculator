@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Tip Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <h2>TIP CALCULATOR</h2>
+        <p>-You enter the amount of the bill(allow 2 decimal places), [textbox] (One textbox that allows two decimal places) <br>
+            -select from a dropdown of typical tip percentages(5, 10,15,20,25,30), [dropdown] (one select list)<br>
+            -and number of people paying for the bill. [textbox] (one textbox that only allows integers)<br><br>
+            -Needs validation that an amount and percentage were selected. <br>
+            -If nothing entered for number of people, assume 1.</p><br>
+        <div class='container'>
+            <div id='calculator'>
+                <form>
+                    <label for='bill'>Bill Amount:</label>
+                    <input type='number' id='bill' value='0.01' min='0.01' step='0.01'>                                            
+                    <label for='tip_percent'>Tip Percentage:</label>
+                    <select id='tip_percent'>
+                        <option value="five">5%</option>
+                        <option value="ten">10%</option>
+                        <option value="fifteen">15%</option>
+                        <option value="twenty">20%</option>
+                        <option value="twenty-five">25%</option>
+                        <option value="thirty">30%</option>
+                    </select><span>
+                    <label for='check_split'># of people paying:</label>
+                    <input type='number' id='check_split' value='1' min='1' step='1'>
+                </form>
+                <button type="button" onclick='processTransaction()'>Calculate Tip</button>
+                <p>bill: <span id="amount"></span></p>
+                <p>tip percent: <span id="tipp"></span></p>
+                <p>tip total: <span id="totalTip"></span></p>
+                <p>bill total: <span id="totalBill"></span></p>
+                <p>bill split: <span id="billSplit"></span></p>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+ 
